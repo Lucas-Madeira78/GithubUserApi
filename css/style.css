@@ -1,0 +1,114 @@
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(38, 41, 46);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fa-github {
+    color: white;
+    font-size: 32px;
+    padding: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+#formSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputSearch {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(38, 41, 46);
+    border-radius: 5px;
+}
+
+#button {
+    width: 100%;
+    max-width: 150px;
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid rgb(38, 41, 46);
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#button:hover {
+    background-color: #ff6bb3;
+    color: #fff;
+}
+
+/*User profile from API*/
+
+#reposTitle {
+    display: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#profileUserArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#profilePhoto {
+    max-width: 300px;
+    border: 5px solid #ff6bb3;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#profileUserRepo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profileRepos {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(38, 41, 46);
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.profileRepos:hover {
+    background-color: #ff6bb3;
+    color: #fff;
+}

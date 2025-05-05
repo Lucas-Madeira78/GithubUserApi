@@ -1,7 +1,3 @@
-html {
-    height: 100vh;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -68,13 +64,6 @@ h1 {
 
 /*User profile from API*/
 
-#reposTitle {
-    display: none;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: normal;
-}
-
 #profileUserArea {
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +80,23 @@ h1 {
     margin: 20px;
 }
 
+#profileBio {
+    padding: 10px;
+}
+
+#follows {
+    padding: 5px;
+    border: 2px solid #ff6bb3;
+    border-radius: 5px;
+}
+
+.title {
+    display: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
 #profileUserRepo {
     display: flex;
     flex-wrap: wrap;
@@ -104,6 +110,7 @@ h1 {
     border: 1px solid rgb(38, 41, 46);
     border-radius: 5px;
     color: #000;
+    text-align: center;
     text-decoration: none;
     transition: 0.3s ease;
 }
@@ -111,4 +118,24 @@ h1 {
 .profileRepos:hover {
     background-color: #ff6bb3;
     color: #fff;
+}
+
+.repoInfos {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.info {
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #695acc;
+}
+
+#profileUserEvents {
+    display: none;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
 }

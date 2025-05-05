@@ -1,4 +1,4 @@
-import { getUser, userRepos } from "./api.js";
+import { getUser, GetUserRepos, GetUserEvents } from "./api.js";
 import { user } from "./user.js";
 import { screen } from "./screen.js";
 
@@ -10,8 +10,12 @@ async function searchUser(userInput) {
     }
     screen.renderProfile(user);
 
-    user.setRepositories(await userRepos(userInput))
+    user.setRepositories(await GetUserRepos(userInput));
     screen.renderRepo(user);
+    
+    user.setEvents(await GetUserEvents(userInput))
+    console.log(user.events);
+    screen.renderEvents(user)
 }
 
 document.getElementById("button").addEventListener('click', () => {

@@ -53,8 +53,11 @@ const screen = {
         this.profileArea.innerHTML = `
             <h3>Usuário não encontrado</h3>
         `
-        this.repoTitleArea.style.display = "none";
+        this.titleArea.forEach(element => {
+            element.style.display = "none";
+        });
         this.repoArea.innerHTML = "";
+        this.eventsArea.style.display = "none";
     }
 }
 

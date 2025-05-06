@@ -25,7 +25,7 @@ const screen = {
                 <a class="profileRepos" href="${repo.html_url}" target="_blank">
                     ${repo.name}
                     <div class="repoInfos">
-                        <p class="info">🍴${repo.forks}</p> <p class="info">⭐${repo.stargazers_count}</p> <p class="info">👀${repo.watchers}</p> <p class="info">👨🏻‍💻${repo.language ? repo.language : "Não especificada"}</p>
+                        <p class="info">🍴${repo.forks}</p> <p class="info">⭐${repo.stargazers_count}</p> <p class="info">👀${repo.watchers}</p> <p class="info">👨🏻‍💻${repo.language ? repo.language : "Indefinido"}</p>
                     </div>
                 </a>
             `
